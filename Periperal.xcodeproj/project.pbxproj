@@ -12,6 +12,9 @@
 		C1EA4CC82292887200C58CB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1EA4CC62292887200C58CB3 /* Main.storyboard */; };
 		C1EA4CCA2292887500C58CB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1EA4CC92292887500C58CB3 /* Assets.xcassets */; };
 		C1EA4CCD2292887500C58CB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1EA4CCB2292887500C58CB3 /* LaunchScreen.storyboard */; };
+		C1EA4CD62292897800C58CB3 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EA4CD52292897800C58CB3 /* CoreBluetooth.framework */; };
+		C1EA4CD82292898500C58CB3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EA4CD72292898500C58CB3 /* CoreLocation.framework */; };
+		C1EA4CDA229289B100C58CB3 /* PeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA4CD9229289B100C58CB3 /* PeripheralManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		C1EA4CC92292887500C58CB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1EA4CCC2292887500C58CB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1EA4CCE2292887500C58CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1EA4CD52292897800C58CB3 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		C1EA4CD72292898500C58CB3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C1EA4CD9229289B100C58CB3 /* PeripheralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1EA4CD82292898500C58CB3 /* CoreLocation.framework in Frameworks */,
+				C1EA4CD62292897800C58CB3 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 			children = (
 				C1EA4CC12292887200C58CB3 /* Periperal */,
 				C1EA4CC02292887200C58CB3 /* Products */,
+				C1EA4CD42292897800C58CB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,18 @@
 				C1EA4CC92292887500C58CB3 /* Assets.xcassets */,
 				C1EA4CCB2292887500C58CB3 /* LaunchScreen.storyboard */,
 				C1EA4CCE2292887500C58CB3 /* Info.plist */,
+				C1EA4CD9229289B100C58CB3 /* PeripheralManager.swift */,
 			);
 			path = Periperal;
+			sourceTree = "<group>";
+		};
+		C1EA4CD42292897800C58CB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1EA4CD72292898500C58CB3 /* CoreLocation.framework */,
+				C1EA4CD52292897800C58CB3 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1EA4CDA229289B100C58CB3 /* PeripheralManager.swift in Sources */,
 				C1EA4CC52292887200C58CB3 /* ViewController.swift in Sources */,
 				C1EA4CC32292887200C58CB3 /* AppDelegate.swift in Sources */,
 			);
